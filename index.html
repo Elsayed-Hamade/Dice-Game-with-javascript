@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Assets/logo.svg" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Roll The Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Background Circles -->
+      <div class="back-circle"></div>
+      <!-- Player 0 -->
+      <div class="player-0 playing card">
+        <div class="player-score">
+          <h1 class="title-score">Player Score</h1>
+          <p class="score-0 score">0</p>
+        </div>
+        <div class="current-score">
+          <h4 class="current-title">Current</h4>
+          <p class="current-score-0">0</p>
+        </div>
+      </div>
+      <!-- Middle -->
+      <div class="middle">
+        <button class="again btn">
+          Again
+          <i class="bx bx-reset"></i>
+        </button>
+        <!-- DICE -->
+        <div class="dice-container">
+          <img
+            src="Assets/dice-1.png"
+            alt="Something wrong with dice img"
+            class="dice hidden"
+          />
+        </div>
+        <!-- End Dice -->
+        <button class="roll btn">
+          Roll
+          <i class="bx bx-dice-3"></i>
+        </button>
+        <button class="hold btn">
+          Hold
+          <i class="bx bxs-box"></i>
+        </button>
+      </div>
+      <!-- Player 1 -->
+      <div class="player-1 card">
+        <div class="player-score">
+          <h1 class="title-score">Player Score</h1>
+          <p class="score-1 score">0</p>
+        </div>
+        <div class="current-score">
+          <h4 class="current-title">Current</h4>
+          <p class="current-score-1">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
